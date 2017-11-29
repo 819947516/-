@@ -1,0 +1,97 @@
+
+@import "./adapter.less";
+
+@import "./base.less";
+
+@import "./mixin.less";
+
+.wrapper {
+
+  .items {
+    margin: 27/32rem 25/32rem 35/32rem;
+
+    .title {
+      overflow: hidden;
+      font-size: 28/32rem;
+      h3 {
+        float: left;
+      }
+      span {
+        display: block;
+        float: right;
+      }
+    }
+    .body {
+      //通用
+      //border-radius: 10/32rem;
+      &:not(.add){
+        .border-radius(10/32rem);
+      }
+      overflow: hidden;
+      background: #fff;
+      margin-bottom: 30/32rem;
+      .content {
+        height: 233/32rem;
+      }
+      .action {
+        margin-top: 32/32rem;
+        display: flex;
+        height: 50/32rem;
+        padding-bottom: 18/32rem;
+        .box-sizing;
+        a {
+          font-size: 26/32rem;
+          display: block;
+          //width: 292/32rem;
+          flex: 1;
+          text-align: center;
+          border-right: 1px solid #e8e2d9;
+          span {
+            color: #c9c9c9;
+          }
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+    }
+    .all {
+      .content {
+        background: #55bc75;
+        }
+      .action {
+        a {
+          color: #55bc75;
+        }
+      }
+    }
+    .coupon {
+      .content {
+        background: #a974bc;
+      }
+      .action {
+        a {
+          color: #a974bc;
+        }
+      }
+    }
+    .add {
+      .box-sizing;
+      height: 222/32rem;
+      display: block;
+      border: 2/32rem dashed #dedede;
+        a {
+          color: #aeaeae;
+          font-size: 104/32rem;
+          text-align: center;
+          margin-top: 36/32rem;
+          span {
+            display: block;
+            color: #c4c4c4;
+            font-size: 26/32rem;
+          }
+        }
+      }
+  }
+
+}
